@@ -24,13 +24,13 @@ const StateCard = () => {
             <p>Current status: {component.state.button1}</p>
           </div>
           <div className="item">
-            <button onClick={}>
+            <button onClick="FIX_THIS_EVENT">
               Button 2
             </button>
             <p>Current count: ADD_STATE_HERE</p>
           </div>
           <div className="item">
-            <button onClick={}>button 3</button>
+            <button onClick="FIX_THIS_EVENT">button 3</button>
             <p>Current word: ADD_STATE_HERE</p>
           </div>
         </div>
