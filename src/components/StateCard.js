@@ -8,42 +8,30 @@ const StateCard = () => {
     button3: "You",
   }
   component.handleButton1 = () => {
-    if (component.state.button1 === "On!") {
-      component.setState({button1: "Off..."})
-    } else {
-      component.setState({button1: "On!"})
-    }
+    alert("Button 1 pressed!")
   }
-  component.handleButton2 = () => {
-    let count = component.state.button2
-    count += 1
-    component.setState({button2: count})
-  }
-  component.handleButton3 = () => {
-    if (component.state.button3 === "You") {
-      component.setState({button3: "are"})
-    } else if (component.state.button3 === "are") {
-      component.setState({button3: "Cool!"})
-    } else {
-      component.setState({button3: "You"})
-    }
-  }
+  component.handleButton2 = () => {}
+  component.handleButton3 = () => {}
   component.render = () => {
     return(
       <div className="StateCard">
         <h2>Press some buttons!</h2>
         <div className="card-content">
           <div className="item">
-            <button onClick={()=>{component.handleButton1()}}>Button 1</button>
+            <button onClick={()=>{component.handleButton1()}}>
+              Button 1
+            </button>
             <p>Current status: {component.state.button1}</p>
           </div>
           <div className="item">
-            <button onClick={()=>{component.handleButton2()}}>Button 2</button>
-            <p>Current count: {component.state.button2}</p>
+            <button onClick={}>
+              Button 2
+            </button>
+            <p>Current count: ADD_STATE_HERE</p>
           </div>
           <div className="item">
-            <button onClick={()=>{component.handleButton3()}}>button 3</button>
-            <p>Current word: {component.state.button3}</p>
+            <button onClick={}>button 3</button>
+            <p>Current word: ADD_STATE_HERE</p>
           </div>
         </div>
       </div>
