@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import './App.css';
 import StateCard from './components/StateCard.js';
 import Nav from './components/Nav.js';
