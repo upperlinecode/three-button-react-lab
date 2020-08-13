@@ -3,7 +3,7 @@ import './App.css';
 import StateCard from './components/StateCard.js';
 import Nav from './components/Nav.js';
 
-const App = () => {
+function App() {
   return (
     <div className="App">
       <Nav />

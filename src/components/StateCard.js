@@ -1,27 +1,34 @@
-import React from 'react';
+import React, {Component} from 'react';
 
-const StateCard = () => {
-  const component = new React.Component();
-  component.state = {
-    button1: "On!",
-    button2: 0,
-    button3: "You",
+class StateCard extends Component {
+  // Constructor (always part of a class component)
+  constructor(props) {
+    super(props);
+    this.state = {
+      button1: "On!",
+      button2: 0,
+      button3: "You",
+    };
   }
-  component.handleButton1 = () => {
-    alert("Button 1 pressed!")
+
+  // Functions to handle button presses.
+  handleButton1 = () => {
+    alert("Button 1 pressed!");
   }
-  component.handleButton2 = () => {}
-  component.handleButton3 = () => {}
-  component.render = () => {
+  handleButton2 = () => {}
+  handleButton3 = () => {}
+
+  // The render function
+  render = () => {
     return(
       <div className="StateCard">
         <h2>Press some buttons!</h2>
         <div className="card-content">
           <div className="item">
-            <button onClick={()=>{component.handleButton1()}}>
+            <button onClick={this.handleButton1}>
               Button 1
             </button>
-            <p>Current status: {component.state.button1}</p>
+            <p>Current status: {this.state.button1}</p>
           </div>
           <div className="item">
             <button onClick="FIX_THIS_EVENT">
@@ -35,9 +42,8 @@ const StateCard = () => {
           </div>
         </div>
       </div>
-    )
+    );
   }
-  return component
 }
 
 export default StateCard;
