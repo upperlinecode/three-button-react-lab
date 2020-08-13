@@ -19,7 +19,7 @@ class StateCard extends Component {
   handleButton3 = () => {}
 
   // The render function
-  render = () => {
+  render() {
     return(
       <div className="StateCard">
         <h2>Press some buttons!</h2>
